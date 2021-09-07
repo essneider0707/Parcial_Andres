@@ -35,6 +35,8 @@ namespace Parcial_Andres
             this.lblContraseña = new System.Windows.Forms.Label();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.TxtContraseña = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPanaderia
@@ -96,20 +98,31 @@ namespace Parcial_Andres
             this.TxtContraseña.Size = new System.Drawing.Size(197, 20);
             this.TxtContraseña.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Parcial_Andres.Properties.Resources.babette;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(777, 424);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(697, 406);
             this.Controls.Add(this.TxtContraseña);
             this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblPanaderia);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "inicio de sesion ";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +136,7 @@ namespace Parcial_Andres
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.TextBox TxtUsuario;
         private System.Windows.Forms.TextBox TxtContraseña;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
