@@ -10,9 +10,17 @@ using System.Windows.Forms;
 
 namespace Parcial_Andres
 {
-    public partial class Form1 : Form
+    public partial class InicioSesión : Form
     {
-        public Form1()
+        string UserAdmin = "AndresQuintero";
+        string passwordAdmin = "andres123";
+        string User_1 = "JuanitaPerez";
+        string passwordUser_1 = "juanita123";
+        string User_2 = "JuanCastillo";
+        string passwordUser_2 = "juan123";
+
+
+        public InicioSesión()
         {
             InitializeComponent();
         }
@@ -34,6 +42,11 @@ namespace Parcial_Andres
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+            if (TxtUsuario.Text == UserAdmin && TxtContraseña.Text == passwordAdmin)
+            {
+                TxtUsuario.Clear();
+                TxtContraseña.Clear();
+            }
 
         }
     }

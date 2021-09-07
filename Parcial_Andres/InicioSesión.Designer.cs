@@ -1,7 +1,7 @@
 ﻿
 namespace Parcial_Andres
 {
-    partial class Form1
+    partial class InicioSesión
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -63,6 +63,7 @@ namespace Parcial_Andres
             // 
             // btnIniciar
             // 
+            this.btnIniciar.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.Location = new System.Drawing.Point(299, 303);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(167, 48);
@@ -103,11 +104,12 @@ namespace Parcial_Andres
             this.pictureBox1.Image = global::Parcial_Andres.Properties.Resources.babette;
             this.pictureBox1.Location = new System.Drawing.Point(-3, -4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(777, 424);
+            this.pictureBox1.Size = new System.Drawing.Size(702, 424);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+     
             // 
-            // Form1
+            // InicioSesión
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,8 +121,8 @@ namespace Parcial_Andres
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblPanaderia);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
-            this.Text = "inicio de sesion ";
+            this.Name = "InicioSesión";
+            this.Text = "InicioSesion";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
