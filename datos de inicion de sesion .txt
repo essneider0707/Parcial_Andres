@@ -1,0 +1,8 @@
+datos de inicio de sesión
+
+string UserAdmin = "AndresQuintero";
+string passwordAdmin = "andres123";
+string User_1 = "JuanitaPerez";
+string passwordUser_1 = "juanita123";
+string User_2 = "JuanCastillo";
+string passwordUser_2 = "juan123";
