@@ -46,8 +46,32 @@ namespace Parcial_Andres
             {
                 TxtUsuario.Clear();
                 TxtContraseña.Clear();
+                Admin Main = new Admin();
+                Main.ShowDialog();
             }
+            else
+            {
+                if (TxtUsuario.Text == User_1 && TxtContraseña.Text == passwordUser_1)
+                {
+                    TxtUsuario.Clear();
+                    TxtContraseña.Clear();
+                    User Main = new User();
+                    Main.ShowDialog();
+                }
+                else
+                {
+                    if (TxtUsuario.Text == User_2 && TxtContraseña.Text == passwordUser_2)
+                    {
+                        TxtUsuario.Clear();
+                        TxtContraseña.Clear();
+                        User Main = new User();
+                        Main.ShowDialog();
+                    }
 
+                }
+
+            
+                }
+            }
         }
     }
-}
