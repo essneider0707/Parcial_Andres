@@ -31,6 +31,10 @@ namespace Parcial_Andres
         {
             this.lblPanaderia = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.lblContraseña = new System.Windows.Forms.Label();
+            this.TxtUsuario = new System.Windows.Forms.TextBox();
+            this.TxtContraseña = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblPanaderia
@@ -55,11 +59,49 @@ namespace Parcial_Andres
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario";
             // 
+            // btnIniciar
+            // 
+            this.btnIniciar.Location = new System.Drawing.Point(299, 303);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(167, 48);
+            this.btnIniciar.TabIndex = 2;
+            this.btnIniciar.Text = "Iniciar Sesion ";
+            this.btnIniciar.UseVisualStyleBackColor = true;
+            // 
+            // lblContraseña
+            // 
+            this.lblContraseña.AutoSize = true;
+            this.lblContraseña.Font = new System.Drawing.Font("Microsoft Yi Baiti", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Location = new System.Drawing.Point(147, 200);
+            this.lblContraseña.Name = "lblContraseña";
+            this.lblContraseña.Size = new System.Drawing.Size(138, 33);
+            this.lblContraseña.TabIndex = 3;
+            this.lblContraseña.Text = "Contraseña";
+            // 
+            // TxtUsuario
+            // 
+            this.TxtUsuario.Location = new System.Drawing.Point(299, 131);
+            this.TxtUsuario.Name = "TxtUsuario";
+            this.TxtUsuario.Size = new System.Drawing.Size(197, 20);
+            this.TxtUsuario.TabIndex = 4;
+            this.TxtUsuario.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // TxtContraseña
+            // 
+            this.TxtContraseña.Location = new System.Drawing.Point(299, 213);
+            this.TxtContraseña.Name = "TxtContraseña";
+            this.TxtContraseña.Size = new System.Drawing.Size(197, 20);
+            this.TxtContraseña.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TxtContraseña);
+            this.Controls.Add(this.TxtUsuario);
+            this.Controls.Add(this.lblContraseña);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblPanaderia);
             this.Name = "Form1";
@@ -73,6 +115,10 @@ namespace Parcial_Andres
 
         private System.Windows.Forms.Label lblPanaderia;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Label lblContraseña;
+        private System.Windows.Forms.TextBox TxtUsuario;
+        private System.Windows.Forms.TextBox TxtContraseña;
     }
 }
 
