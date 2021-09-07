@@ -67,6 +67,7 @@ namespace Parcial_Andres
             this.btnIniciar.TabIndex = 2;
             this.btnIniciar.Text = "Iniciar Sesion ";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // lblContraseña
             // 
@@ -81,6 +82,7 @@ namespace Parcial_Andres
             // TxtUsuario
             // 
             this.TxtUsuario.Location = new System.Drawing.Point(299, 131);
+            this.TxtUsuario.Multiline = true;
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(197, 20);
             this.TxtUsuario.TabIndex = 4;
@@ -89,6 +91,7 @@ namespace Parcial_Andres
             // TxtContraseña
             // 
             this.TxtContraseña.Location = new System.Drawing.Point(299, 213);
+            this.TxtContraseña.Multiline = true;
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.Size = new System.Drawing.Size(197, 20);
             this.TxtContraseña.TabIndex = 5;
@@ -105,7 +108,8 @@ namespace Parcial_Andres
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblPanaderia);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "inicio de sesion ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
